@@ -9,11 +9,11 @@ app.use(bodyParser.json());
 app.use(express.json())
 
 
-const peopleRoute = require('./routes/people')
+const personRoute = require('./routes/person')
 
 const port = process.env.PORT || 3000
 
-app.use(peopleRoute)
+app.use(personRoute)
 
 app.listen(port,()=>{
     console.log('Server is up on port '+ port)
